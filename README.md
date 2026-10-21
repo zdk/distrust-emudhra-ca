@@ -1,9 +1,9 @@
 # distrust-emudhra-ca
 
-Distrust eMudhra's certificate authority issued certificates from compromised
-intermediates (details: https://emudhra.we-have-a-problem.com/).
+Distrust eMudhra Intermediate CA.
+Details at https://emudhra.we-have-a-problem.com/.
 Your computer may still trust them.
-So, this script checks, and if needed, make OS to stop trusting the two root CAs behind them.
+Use this script to check and apply workarounds to fix.
 
 Needs: `curl`, internet access, and `sudo` for the fix.
 
@@ -19,7 +19,7 @@ Needs: `curl`, internet access, and `sudo` for the fix.
     STILL TRUSTED  dv-g3b-emudhra       <- bad, go to step 3
     blocked        dv-g3b-aaa-emudhra   <- good
 
-If both lines say `blocked`, you are done.
+If both lines say `blocked`, you should be good.
 
 ## 3. Fix
 
